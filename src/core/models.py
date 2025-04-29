@@ -37,7 +37,7 @@ class MCMerchant(BaseUUIDPK, BaseDates):
     )
 
 
-class MerchantProductTrack(Base):
+class MerchantProductTrack(BaseDates):
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
     sku: Mapped[str]
     master_sku: Mapped[str]

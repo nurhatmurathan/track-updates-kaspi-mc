@@ -19,17 +19,6 @@ async def kaspimc_logged_in_session(username: str, password: str, merchant_id: s
         await session.close()
 
 
-# async def get_merchants_services(merchants: Sequence[MarketingMerchant]):
-#     for merchant in merchants:
-#         try:
-#             async for service in get_web_service(merchant.phone, merchant.password, merchant.id):
-#                 yield service
-#         except KaspiRequestError as e:
-#             logger.error("Failed login process on merchant: %s: %s", merchant.id, merchant.merchant_name)
-#             logger.error(e)
-#
-
-
 async def login_start_session(session: ClientSession, username: str, password: str):
     # set cookie headers
     async with session.get(settings.auth_cookies_url) as response:
