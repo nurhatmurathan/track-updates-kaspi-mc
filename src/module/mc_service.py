@@ -5,11 +5,11 @@ from typing import Any, List
 from aiohttp import ClientSession
 
 from .schemas import ProductMCSchema
-from src.common.exceptions import KaspiRequestException
-from src.core import logger, mc_settings
+from src.common.exceptions import HttpRequestError
+from src.core import logger, settings
 
 
-class ProductMCService:
+class KaspiMCService:
     OFFERS_PAGINATE_SIZE = 50
 
     def __init__(self, session: ClientSession, merchant_id: str):
@@ -26,10 +26,10 @@ class ProductMCService:
             "a": available,
             "t": sku,
         }
-        url = mc_settings.offers_url
+        url = settings.offers_url
         async with self.session.get(url, params=params) as response:
             if response.status != 200:
-                raise KaspiRequestException(url, response.status, await response.text())
+                raise HttpRequestError(url, response.status, await response.text())
             json = await response.json()
         return json["total"] if init else json["data"]
 
@@ -50,7 +50,7 @@ class ProductMCService:
         validated_products = []
         for items in active_offers + archive_offers:
             for item in items:
-                item["merchant_id"] = self.merchant_id
+                # item["merchant_id"] = self.merchant_id
                 product = ProductMCSchema.model_validate(item)
                 validated_products.append(product)
 

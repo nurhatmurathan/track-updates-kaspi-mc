@@ -13,6 +13,7 @@ class Settings(Base):
     auth_cookies_url: str = "https://mc.shop.kaspi.kz/oauth2/authorization/1"
     login_url: str = "https://idmc.shop.kaspi.kz/api/p/login"
     merchants_url: str = "https://mc.shop.kaspi.kz/s/m"
+    offers_url: str = "https://mc.shop.kaspi.kz/bff/offer-view/list"
 
 
 class DBSettings(Base):
