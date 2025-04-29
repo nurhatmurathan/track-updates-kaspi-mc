@@ -1,1 +1,7 @@
 aiohttp
+pydantic
+pydantic-settings
+sqlalchemy
+alembic
+psycopg2-binary
+asyncpg
