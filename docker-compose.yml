@@ -1,0 +1,18 @@
+x-common-variables: &common-variables
+  DEBUG: False
+
+services:
+  app:
+    build: .
+    ports:
+      - "8001:8000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      <<: *common-variables
+    command: echo "Hello, world!"
+
+networks:
+  default:
+    name: app-network
+    external: true

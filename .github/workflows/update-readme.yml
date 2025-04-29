@@ -1,0 +1,81 @@
+name: Repo Created
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  # This job checks if the repository is new runs only once and deletes itself
+  check-initial-commit:
+    if: ${{ !github.event.repository.is_template }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check if initial commit
+        id: check
+        run: |
+          if [ $(git rev-list --count HEAD) -le 1 ]
+          then
+            echo "initial_commit=true" >> $GITHUB_OUTPUT
+          else
+            echo "initial_commit=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Change README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: steps.check.outputs.initial_commit == 'true'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          echo "# ${{github.event.repository.name}} project :wave:" > README.md
+          echo "---" >> README.md
+          echo "## Usage" >> README.md
+          echo "" >> README.md
+          echo '1. Clone the project: ```git clone git@github.com:{your-username}/${{github.event.repository.name}}.git```' >> README.md
+          echo "" >> README.md
+          echo '2. Go to the project folder: ```cd ${{github.event.repository.name}}```' >> README.md
+          echo "" >> README.md
+          echo '3. Install the package installer [uv](https://github.com/astral-sh/uv): ```pip install uv```' >> README.md
+          echo "" >> README.md
+          echo '4. Create virtual environment: ```uv venv```' >> README.md
+          echo "" >> README.md
+          echo '5. Activate virtual environment: ```source .venv/bin/activate```' >> README.md
+          echo "" >> README.md
+          echo '6. Install development dependencies: ```just dev-deps```' >> README.md
+          echo "" >> README.md
+          echo '7. Build the Docker container: ```just build```' >> README.md
+          echo "" >> README.md
+          echo '8. Start the application: ```just up```' >> README.md
+          echo "" >> README.md
+          echo '9. Install pre-commit hooks: ```pre-commit install```' >> README.md
+          echo "" >> README.md
+          echo "> **Note:** This project has been tested and verified only on macOS. While it may work on other operating systems, we cannot guarantee full compatibility." >> README.md
+          git add README.md
+          git commit -m "Changed README.md"
+          git push
+
+      - name: Remove current workflow
+        if: steps.check.outputs.initial_commit == 'true'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git rm .github/workflows/update-readme.yml
+          git commit -m "Remove initial commit workflow"
+          git push
+
+      - name: Create develop branch
+        if: steps.check.outputs.initial_commit == 'true'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+          git checkout -b develop
+          git push -u origin develop
