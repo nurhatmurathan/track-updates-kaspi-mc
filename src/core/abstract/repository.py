@@ -24,6 +24,11 @@ class Repository(Generic[M]):
         result = await self.session.execute(stmt)
         return result.scalars().one()
 
+    async def get_by_filters(self, where: list[bool]) -> M:
+        stmt = select(self.model).filter(*where)
+        result = await self.session.execute(stmt)
+        return result.scalars().one()
+
     async def create(self, instance: M, refresh: bool = True) -> M:
         self.session.add(instance)
         await self.session.commit()
