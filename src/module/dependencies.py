@@ -1,7 +1,17 @@
 from aiohttp import ClientSession, ClientTimeout
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.common.exceptions import HttpRequestError
 from src.core import logger, settings
+from src.core.abstract import Repository
+from src.core.models import MCMerchant, MerchantProductTrack
+from src.module import RepoService
+
+
+def get_repo_service(db_session: AsyncSession):
+    return RepoService(
+        db_session, Repository(db_session, MCMerchant), Repository(db_session, MerchantProductTrack)
+    )
 
 
 async def kaspimc_logged_in_session(username: str, password: str, merchant_id: str):

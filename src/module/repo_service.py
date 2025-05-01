@@ -1,3 +1,5 @@
+from typing import Sequence
+
 from pydantic import UUID4
 from sqlalchemy.exc import NoResultFound
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -18,6 +20,11 @@ class RepoService:
         self.session = session
         self.merchant_repo = merchant_repo
         self.merchant_product_repo = merchant_product_repo
+
+    async def get_merchants(self) -> Sequence[MCMerchant]:
+        query = self.merchant_repo.get_list_query()
+        result = await self.session.execute(query)
+        return result.scalars().all()
 
     async def track_product(self, product_schema: ProductMCSchema, merchant_id: UUID4):
         try:
