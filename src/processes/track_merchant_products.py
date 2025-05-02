@@ -23,7 +23,10 @@ async def track_merchant_products_process(db_session: AsyncSession):
         except HttpRequestError as e:
             logger.error("Failed login process on merchant: %s: %s", merchant.merchant_id, merchant.username)
             logger.exception(e)
-
+        except Exception as e:
+            logger.error("Error occurred on merchant: %s: %s", merchant.merchant_id, e)
+            logger.exception(e)
+            return False
     return True
 
 

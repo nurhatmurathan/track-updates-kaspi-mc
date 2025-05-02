@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 
-from sqlalchemy import ARRAY, UUID, BigInteger, ForeignKey, String, text
+from sqlalchemy import ARRAY, BigInteger, ForeignKey, String, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, declared_attr, mapped_column, relationship
 
 
@@ -24,7 +24,7 @@ class BaseDates(Base):
 
 class BaseUUIDPK(Base):
     __abstract__ = True
-    id: Mapped[UUID] = mapped_column(primary_key=True, server_default=text("uuid_generate_v4()"))
+    id: Mapped[str] = mapped_column(primary_key=True, server_default=text("uuid_generate_v4()"))
 
 
 class MCMerchant(BaseUUIDPK, BaseDates):
@@ -57,6 +57,6 @@ class MerchantProductTrack(BaseDates):
     any_kaspi_delivery_express: Mapped[Optional[bool]]
     any_merchant_delivery: Mapped[Optional[bool]]
 
-    merchant_id: Mapped[UUID] = mapped_column(ForeignKey("api_mcmerchant.id"))
+    merchant_id: Mapped[str] = mapped_column(ForeignKey("api_mcmerchant.id"))
 
     merchant: Mapped["MCMerchant"] = relationship("MCMerchant", back_populates="products")

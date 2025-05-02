@@ -39,6 +39,12 @@ async def login_start_session(session: ClientSession, username: str, password: s
     async with session.post(settings.login_url, data=credentials) as response:
         if response.status != 200:
             raise HttpRequestError(settings.login_url, response.status, await response.text())
+        data = await response.json()
+
+    redirect_url = data.get("redirectUrl")  # auth redirect
+    async with session.get(redirect_url) as response:
+        if response.status != 200:
+            raise HttpRequestError(redirect_url, response.status, await response.text())
 
     logger.info("Login successful merchat - %s", username)
 
