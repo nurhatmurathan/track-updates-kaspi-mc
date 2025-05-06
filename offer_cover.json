@@ -7,13 +7,13 @@
             ],
             "shopLink": "/p/vilka-570619-1-sht-aljuminii-113744482/",
             "masterTitle": "Вилка 570619 1 шт, алюминий",
-            "offerId": "67273ba30f6efb21fc2a984e",
-            "fileId": "SYSTEM",
+            "offerId": "6819d805a32171599b7961d8",
+            "fileId": "MANUAL_CHANGES",
             "merchantUid": "8107004",
             "sku": "113744482_000573024",
             "model": "Вилка 570619 1 шт, алюминий",
             "brand": null,
-            "price": 51,
+            "price": 670,
             "oldprice": 0,
             "availabilities": [
                 {
@@ -35,34 +35,29 @@
             ],
             "cityPrices": [
                 {
-                    "value": 51,
-                    "cityId": "710000000",
+                    "value": 670,
+                    "cityId": "750000000",
                     "oldprice": 0
                 },
                 {
-                    "value": 51,
-                    "cityId": "750000000",
+                    "value": 670,
+                    "cityId": "710000000",
                     "oldprice": 0
                 }
             ],
             "deliveryOptions": null,
-            "_version": 60,
-            "_distinctVersion": 2,
-            "offerSource": "REINDEX",
-            "reindexReason": "MERCHANT_SPECIAL_DAYS_CHANGED",
+            "_version": null,
+            "_distinctVersion": 3,
+            "offerSource": "MANUAL_OFFER",
+            "reindexReason": null,
             "matchesLastBatch": false,
-            "skipDistinctCheck": true,
+            "skipDistinctCheck": false,
             "priority": 0,
             "rangePrice": {
-                "MAX": 51,
-                "MIN": 51
+                "MIN": 670,
+                "MAX": 670
             },
             "updates": [
-                {
-                    "operationType": "PRICE_CHANGE",
-                    "uploadedBy": "samayryn@gmail.com",
-                    "uploadedDate": "2024-09-29T16:44:58.918"
-                },
                 {
                     "operationType": "REMOVE",
                     "uploadedBy": "samayryn@gmail.com",
@@ -77,24 +72,29 @@
                     "operationType": "REINDEX",
                     "uploadedBy": "distinct-indexer",
                     "uploadedDate": "2025-05-05T11:51:26.65"
+                },
+                {
+                    "operationType": "PRICE_CHANGE",
+                    "uploadedBy": "samayryn@gmail.com",
+                    "uploadedDate": "2025-05-06T14:36:05.615"
                 }
             ],
             "archivedAt": null,
             "modification": false,
             "colourCode": null,
             "attributes": [],
-            "editionDeadline": null,
+            "editionDeadline": "2025-05-07T14:45:48.198+05:00",
             "verticalCategory": "Home",
             "masterCategory": "Master - Cutlery",
             "title": "Вилка 570619 1 шт, алюминий",
             "available": true,
-            "minPrice": 51,
-            "maxPrice": 51,
+            "minPrice": 670,
+            "maxPrice": 670,
             "points": [
                 "PP2",
                 "PP10"
             ],
-            "updatedAt": "2025-05-05T06:51:27.415675Z",
+            "updatedAt": "2025-05-06T09:46:26.558981Z",
             "anyPickup": true,
             "anyKaspiDelivery": true,
             "anyKaspiDeliveryLocal": false,
@@ -104,1003 +104,1003 @@
             "selectedCity": null,
             "allCityPrices": {
                 "111010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "111600100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "111810000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "113220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "113433100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "113630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "113640100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "113820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "114020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "114600000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "114820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "115420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "115630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116645100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116648100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116648700": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116651100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116665100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116672100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "116837100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "117020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "117035100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "117055900": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "151010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "153220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "153630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "154630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "154820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "154823100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "155630000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "156020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "156420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "191010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "191610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "191633100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "192610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "193230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "193459100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194033100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194043100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194067100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194083100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "194830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195233100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195233400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195233500": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195237100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195247100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195247400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195253100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195253200": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195255400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195255500": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "195620100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196235100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196243100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196245100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196247500": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196249100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196253100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196253200": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196253400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196253500": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196255400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196433100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196435100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196833100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196833200": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196837100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196847100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196849200": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "196855100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "231010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "231035300": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "231045100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "233620100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "233635100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "234030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "234230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "234847100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "234853100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "235230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "235235100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "235630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "271000200": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "271010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "271035100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "273230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "273620100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "274030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "276253100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "311010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "313630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314033100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314837100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314847100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314851100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "314851205": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "315030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "315430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "316020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "316220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "316621100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "316630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "351010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "351610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "351810000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352035100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352110000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352210000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352310000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352410000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352810000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "352835100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "353220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "353249100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "353263100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "353285100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "353641300": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "354030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "354430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "354820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "355630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "391010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "391610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "392010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "392410000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "392435100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "393630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "393631100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "394030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "394420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "394830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "395030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "395430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "395439100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "395630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "396230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "396430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "396830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "431010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "431910000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "433220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "433257100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "433259700": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "433630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "434030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "434430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "434630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "434830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "471010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "471810000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "473630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "474239100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "474630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "475030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "475220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "475235100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "511010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "511610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "512039100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "512610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "512635100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "512649100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "513630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514443100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514459100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514481100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514483400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "514630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515247200": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515433100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "515847100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "516030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "516063100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "551010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "551041100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "551043100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "551045100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "551610000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "552210000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "552253100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "553630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "554230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "554830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "555259100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "591010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "593230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "593620100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "594230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "594630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "595030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "595220100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "595620100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "595830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "596020100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "596630100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "612010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "615253100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "616420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "631010000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "632210000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "632810000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "632865100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "633420100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "633600000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "633830100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "633845100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "633851100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634030100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634037100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634049100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634049400": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634069100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634421100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634643300": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634821100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "634835100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "635063100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "635230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "636230100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "636269100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "636430100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "636473100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "636820100": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "710000000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 },
                 "750000000": {
-                    "price": 51,
+                    "price": 670,
                     "oldPrice": null
                 }
             },
