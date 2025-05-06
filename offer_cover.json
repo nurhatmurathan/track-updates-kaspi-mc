@@ -7,62 +7,29 @@
             ],
             "shopLink": "/p/vilka-570619-1-sht-aljuminii-113744482/",
             "masterTitle": "Вилка 570619 1 шт, алюминий",
-            "offerId": "6819d805a32171599b7961d8",
+            "offerId": "6819dc2b458ec52b080c118e",
             "fileId": "MANUAL_CHANGES",
             "merchantUid": "8107004",
             "sku": "113744482_000573024",
-            "model": "Вилка 570619 1 шт, алюминий",
+            "model": null,
             "brand": null,
-            "price": 670,
+            "price": 0,
             "oldprice": 0,
-            "availabilities": [
-                {
-                    "available": "yes",
-                    "storeId": "8107004_PP2",
-                    "stockCount": 590,
-                    "preOrder": 0,
-                    "stockEnabled": true,
-                    "stockSpecified": true
-                },
-                {
-                    "available": "yes",
-                    "storeId": "8107004_PP10",
-                    "stockCount": 570,
-                    "preOrder": 0,
-                    "stockEnabled": true,
-                    "stockSpecified": true
-                }
-            ],
-            "cityPrices": [
-                {
-                    "value": 670,
-                    "cityId": "750000000",
-                    "oldprice": 0
-                },
-                {
-                    "value": 670,
-                    "cityId": "710000000",
-                    "oldprice": 0
-                }
-            ],
+            "availabilities": null,
+            "cityPrices": null,
             "deliveryOptions": null,
             "_version": null,
-            "_distinctVersion": 3,
+            "_distinctVersion": 4,
             "offerSource": "MANUAL_OFFER",
             "reindexReason": null,
             "matchesLastBatch": false,
             "skipDistinctCheck": false,
             "priority": 0,
             "rangePrice": {
-                "MIN": 670,
-                "MAX": 670
+                "MAX": 0,
+                "MIN": 0
             },
             "updates": [
-                {
-                    "operationType": "REMOVE",
-                    "uploadedBy": "samayryn@gmail.com",
-                    "uploadedDate": "2024-11-30T00:25:50.419"
-                },
                 {
                     "operationType": "ON_SALE",
                     "uploadedBy": "samayryn@gmail.com",
@@ -77,9 +44,14 @@
                     "operationType": "PRICE_CHANGE",
                     "uploadedBy": "samayryn@gmail.com",
                     "uploadedDate": "2025-05-06T14:36:05.615"
+                },
+                {
+                    "operationType": "REMOVE",
+                    "uploadedBy": "samayryn@gmail.com",
+                    "uploadedDate": "2025-05-06T14:53:47.511"
                 }
             ],
-            "archivedAt": null,
+            "archivedAt": "2025-05-06T15:02:34.668",
             "modification": false,
             "colourCode": null,
             "attributes": [],
@@ -87,14 +59,14 @@
             "verticalCategory": "Home",
             "masterCategory": "Master - Cutlery",
             "title": "Вилка 570619 1 шт, алюминий",
-            "available": true,
+            "available": false,
             "minPrice": 670,
             "maxPrice": 670,
             "points": [
                 "PP2",
                 "PP10"
             ],
-            "updatedAt": "2025-05-06T09:46:26.558981Z",
+            "updatedAt": "2025-05-06T10:02:34.697589Z",
             "anyPickup": true,
             "anyKaspiDelivery": true,
             "anyKaspiDeliveryLocal": false,
@@ -1104,27 +1076,15 @@
                     "oldPrice": null
                 }
             },
-            "stocks": [
-                {
-                    "cityId": "750000000",
-                    "stockLevel": {
-                        "8107004_PP10": {
-                            "value": 570,
-                            "enabled": true
-                        }
-                    }
-                },
-                {
-                    "cityId": "710000000",
-                    "stockLevel": {
-                        "8107004_PP2": {
-                            "value": 590,
-                            "enabled": true
-                        }
-                    }
-                }
-            ],
-            "offerError": null
+            "offerError": {
+                "offerSource": "MANUAL_OFFER",
+                "errorCodes": [
+                    "NO_AVAILABILITIES"
+                ],
+                "warningCodes": [],
+                "klNotes": [],
+                "reindexReason": null
+            }
         }
     ],
     "total": 1

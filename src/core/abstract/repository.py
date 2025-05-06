@@ -1,12 +1,12 @@
 from typing import Any, Generic, List, Type, TypeVar
 
-from sqlalchemy import select, update
+from sqlalchemy import desc, select, update
 from sqlalchemy.exc import IntegrityError, NoResultFound
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.core.models import Base
+from src.core.models import BaseDates
 
-M = TypeVar("M", bound=Base)
+M = TypeVar("M", bound=BaseDates)
 
 
 class Repository(Generic[M]):
@@ -28,6 +28,11 @@ class Repository(Generic[M]):
         stmt = select(self.model).filter(*where)
         result = await self.session.execute(stmt)
         return result.scalars().one()
+
+    async def get_last_by_filters(self, where: list[bool]) -> M:
+        stmt = select(self.model).filter(*where).order_by(desc("created_at"))
+        result = await self.session.execute(stmt)
+        return result.scalars().first()
 
     async def create(self, instance: M, refresh: bool = True) -> M:
         self.session.add(instance)

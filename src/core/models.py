@@ -58,8 +58,34 @@ class MerchantProductTrack(BaseDates):
     any_kaspi_delivery_local: Mapped[Optional[bool]]
     any_kaspi_delivery_express: Mapped[Optional[bool]]
     any_merchant_delivery: Mapped[Optional[bool]]
-    availabilities: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
 
     merchant_id: Mapped[str] = mapped_column(ForeignKey("api_mcmerchant.id"))
 
     merchant: Mapped["MCMerchant"] = relationship("MCMerchant", back_populates="products")
+
+
+class MerchantProductAvailability(BaseDates):
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    available: Mapped[Optional[str]]
+    store_id: Mapped[Optional[str]]
+    stock_count: Mapped[Optional[int]]
+    pre_order: Mapped[Optional[int]]
+    stock_enabled: Mapped[Optional[bool]]
+    stock_specified: Mapped[Optional[bool]]
+    sku: Mapped[str]
+    merchant_id: Mapped[str]
+
+
+class ProductFeature(BaseDates):
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    product_id: Mapped[str]
+    class_code: Mapped[str]
+    class_name: Mapped[str]
+    name: Mapped[str]
+    attribute_code: Mapped[str]
+    mandatory: Mapped[Optional[bool]]
+    manufacturer_sku: Mapped[Optional[bool]]
+    use_for_matching: Mapped[Optional[bool]]
+    position: Mapped[Optional[int]]
+    attribute_type: Mapped[Optional[int]]
+    value: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
