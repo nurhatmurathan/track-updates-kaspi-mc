@@ -30,6 +30,12 @@
             "points": null
         },
         {
+            "cityId": "514443100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "514420100",
             "price": 51,
             "oldPrice": null,
@@ -90,6 +96,12 @@
             "points": null
         },
         {
+            "cityId": "433257100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "555259100",
             "price": 51,
             "oldPrice": null,
@@ -109,6 +121,12 @@
         },
         {
             "cityId": "512610000",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "153630100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -169,6 +187,12 @@
         },
         {
             "cityId": "196220100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "154823100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -252,6 +276,18 @@
             "points": null
         },
         {
+            "cityId": "634430100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "512039100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "314230100",
             "price": 51,
             "oldPrice": null,
@@ -288,13 +324,31 @@
             "points": null
         },
         {
+            "cityId": "394830100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "271035100",
             "price": 51,
             "oldPrice": null,
             "points": null
         },
         {
+            "cityId": "196247500",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "353249100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "233635100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -349,6 +403,12 @@
         },
         {
             "cityId": "394420100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "554230100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -426,6 +486,12 @@
             "points": null
         },
         {
+            "cityId": "636269100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "196245100",
             "price": 51,
             "oldPrice": null,
@@ -457,6 +523,12 @@
         },
         {
             "cityId": "634049100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "636473100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -509,7 +581,7 @@
             "oldPrice": null,
             "points": [
                 {
-                    "pointId": "8107004_PP18",
+                    "pointId": "8107004_PP2",
                     "name": null,
                     "available": true
                 }
@@ -528,7 +600,25 @@
             "points": null
         },
         {
+            "cityId": "195255500",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "116665100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "314030100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "193230100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -582,6 +672,12 @@
             "points": null
         },
         {
+            "cityId": "395630100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "395030100",
             "price": 51,
             "oldPrice": null,
@@ -607,6 +703,12 @@
         },
         {
             "cityId": "434430100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "635230100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -648,6 +750,12 @@
             "points": null
         },
         {
+            "cityId": "475235100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "116630100",
             "price": 51,
             "oldPrice": null,
@@ -667,6 +775,12 @@
         },
         {
             "cityId": "514481100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "514483400",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -732,6 +846,24 @@
             "points": null
         },
         {
+            "cityId": "196435100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "195255400",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "273230100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "433220100",
             "price": 51,
             "oldPrice": null,
@@ -762,7 +894,25 @@
             "points": null
         },
         {
+            "cityId": "352010000",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "392010000",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "636430100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "353263100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -793,6 +943,12 @@
         },
         {
             "cityId": "116830100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "513630100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -900,7 +1056,19 @@
             "points": null
         },
         {
+            "cityId": "352035100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "154820100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "115630100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -925,6 +1093,12 @@
         },
         {
             "cityId": "195237100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "633600000",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -990,6 +1164,18 @@
             "points": null
         },
         {
+            "cityId": "116837100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "274030100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "634049400",
             "price": 51,
             "oldPrice": null,
@@ -1026,6 +1212,24 @@
             "points": null
         },
         {
+            "cityId": "314847100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "113640100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "595830100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "234230100",
             "price": 51,
             "oldPrice": null,
@@ -1056,6 +1260,12 @@
             "points": null
         },
         {
+            "cityId": "395439100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "434830100",
             "price": 51,
             "oldPrice": null,
@@ -1081,6 +1291,18 @@
         },
         {
             "cityId": "115420100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "396230100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "231045100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -1140,7 +1362,25 @@
             "points": null
         },
         {
+            "cityId": "314837100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "633851100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "475220100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "635063100",
             "price": 51,
             "oldPrice": null,
             "points": null
@@ -1164,6 +1404,12 @@
             "points": null
         },
         {
+            "cityId": "515433100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "196430100",
             "price": 51,
             "oldPrice": null,
@@ -1176,22 +1422,24 @@
             "points": null
         },
         {
+            "cityId": "234853100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "234847100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "750000000",
             "price": 51,
             "oldPrice": null,
             "points": [
                 {
-                    "pointId": "8107004_PPW2",
-                    "name": null,
-                    "available": true
-                },
-                {
-                    "pointId": "8107004_PP16",
-                    "name": null,
-                    "available": true
-                },
-                {
-                    "pointId": "8107004_PP19",
+                    "pointId": "8107004_PP10",
                     "name": null,
                     "available": true
                 }
@@ -1252,14 +1500,26 @@
             "points": null
         },
         {
+            "cityId": "595620100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
             "cityId": "314033100",
+            "price": 51,
+            "oldPrice": null,
+            "points": null
+        },
+        {
+            "cityId": "512649100",
             "price": 51,
             "oldPrice": null,
             "points": null
         }
     ],
-    "updatedAt": "2024-11-29T19:25:58.127337Z",
-    "available": false,
+    "updatedAt": "2025-05-05T06:51:27.415675Z",
+    "available": true,
     "masterProduct": {
         "card": {
             "id": "113744482",
@@ -1550,91 +1810,7 @@
                                     "hour": 18,
                                     "minute": 0
                                 },
-                                "date": "2025-01-06",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-05",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-04",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-03",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-02",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-01",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2024-12-31",
+                                "date": "2025-05-07",
                                 "closed": true,
                                 "name": null,
                                 "message": null
@@ -1721,91 +1897,7 @@
                                     "hour": 18,
                                     "minute": 0
                                 },
-                                "date": "2025-01-06",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-05",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-04",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-03",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-02",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-01",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2024-12-31",
+                                "date": "2025-05-07",
                                 "closed": true,
                                 "name": null,
                                 "message": null
@@ -1831,8 +1923,12 @@
                     "kaspiDelivery": true,
                     "kdPickupType": "SELF_DELIVERY",
                     "kdReturnPointCode": null,
-                    "available": false,
-                    "cityName": "Астана"
+                    "available": true,
+                    "cityName": "Астана",
+                    "stock": {
+                        "value": 590,
+                        "enabled": true
+                    }
                 }
             ]
         },
@@ -1926,91 +2022,7 @@
                                     "hour": 18,
                                     "minute": 0
                                 },
-                                "date": "2025-01-06",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-05",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-04",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-03",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-02",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-01",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2024-12-31",
+                                "date": "2025-05-07",
                                 "closed": true,
                                 "name": null,
                                 "message": null
@@ -2097,91 +2109,7 @@
                                     "hour": 18,
                                     "minute": 0
                                 },
-                                "date": "2025-01-06",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-05",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-04",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-03",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-02",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2025-01-01",
-                                "closed": true,
-                                "name": null,
-                                "message": null
-                            },
-                            {
-                                "openingTime": {
-                                    "hour": 9,
-                                    "minute": 0
-                                },
-                                "closingTime": {
-                                    "hour": 18,
-                                    "minute": 0
-                                },
-                                "date": "2024-12-31",
+                                "date": "2025-05-07",
                                 "closed": true,
                                 "name": null,
                                 "message": null
@@ -2207,20 +2135,66 @@
                     "kaspiDelivery": true,
                     "kdPickupType": "SELF_DELIVERY",
                     "kdReturnPointCode": null,
-                    "available": false,
-                    "cityName": "Алматы"
+                    "available": true,
+                    "cityName": "Алматы",
+                    "stock": {
+                        "value": 570,
+                        "enabled": true
+                    }
                 }
             ]
         }
     ],
-    "availabilities": [],
-    "offerError": {
-        "offerSource": "MANUAL_OFFER",
-        "errorCodes": [
-            "NO_AVAILABILITIES"
-        ],
-        "warningCodes": [],
-        "klNotes": [],
-        "reindexReason": null
-    }
+    "editionDeadline": "2025-05-07T14:45:48.198+05:00",
+    "availabilities": [
+        {
+            "pointId": "8107004_PP10",
+            "name": "PP10",
+            "pickup": true,
+            "kaspiDelivery": true,
+            "kaspiDeliveryLocal": true,
+            "kaspiDeliveryExpress": true,
+            "merchantDelivery": false,
+            "address": {
+                "code": null,
+                "latitude": 43.273453,
+                "longitude": 76.86776,
+                "streetName": " улица Аршалы",
+                "streetNumber": " 58",
+                "town": null,
+                "building": "",
+                "phone": "7076984018",
+                "name": "Зангар",
+                "apartment": null,
+                "district": null
+            },
+            "cityId": "750000000",
+            "cityName": "Алматы"
+        },
+        {
+            "pointId": "8107004_PP2",
+            "name": "PP2",
+            "pickup": true,
+            "kaspiDelivery": true,
+            "kaspiDeliveryLocal": true,
+            "kaspiDeliveryExpress": true,
+            "merchantDelivery": false,
+            "address": {
+                "code": null,
+                "latitude": 51.171223,
+                "longitude": 71.46692,
+                "streetName": " улица Ахмета Жубанова",
+                "streetNumber": " 31",
+                "town": null,
+                "building": "",
+                "phone": "7054494950",
+                "name": "Касымхан",
+                "apartment": null,
+                "district": null
+            },
+            "cityId": "710000000",
+            "cityName": "Астана"
+        }
+    ],
+    "offerError": null
 }

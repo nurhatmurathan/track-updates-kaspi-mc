@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 
-from sqlalchemy import ARRAY, BigInteger, ForeignKey, String, text
+from sqlalchemy import ARRAY, JSON, BigInteger, ForeignKey, String, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, declared_attr, mapped_column, relationship
 
 
@@ -47,6 +47,8 @@ class MerchantProductTrack(BaseDates):
     available: Mapped[bool]
     model: Mapped[Optional[str]]
     brand: Mapped[Optional[str]]
+    vertical_category: Mapped[Optional[str]]
+    master_category: Mapped[Optional[str]]
     min_price: Mapped[Optional[int]]
     max_price: Mapped[Optional[int]]
     images: Mapped[Optional[list[str]]] = mapped_column(ARRAY(String))
@@ -56,6 +58,7 @@ class MerchantProductTrack(BaseDates):
     any_kaspi_delivery_local: Mapped[Optional[bool]]
     any_kaspi_delivery_express: Mapped[Optional[bool]]
     any_merchant_delivery: Mapped[Optional[bool]]
+    availabilities: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
 
     merchant_id: Mapped[str] = mapped_column(ForeignKey("api_mcmerchant.id"))
 

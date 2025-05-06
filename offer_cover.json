@@ -1,29 +1,100 @@
-
 {
+    "data": [
+        {
             "masterSku": "113744482",
             "images": [
                 "h9a/hf3/84160930054174.jpg"
             ],
             "shopLink": "/p/vilka-570619-1-sht-aljuminii-113744482/",
             "masterTitle": "Вилка 570619 1 шт, алюминий",
+            "offerId": "67273ba30f6efb21fc2a984e",
+            "fileId": "SYSTEM",
+            "merchantUid": "8107004",
             "sku": "113744482_000573024",
+            "model": "Вилка 570619 1 шт, алюминий",
+            "brand": null,
+            "price": 51,
+            "oldprice": 0,
+            "availabilities": [
+                {
+                    "available": "yes",
+                    "storeId": "8107004_PP2",
+                    "stockCount": 590,
+                    "preOrder": 0,
+                    "stockEnabled": true,
+                    "stockSpecified": true
+                },
+                {
+                    "available": "yes",
+                    "storeId": "8107004_PP10",
+                    "stockCount": 570,
+                    "preOrder": 0,
+                    "stockEnabled": true,
+                    "stockSpecified": true
+                }
+            ],
+            "cityPrices": [
+                {
+                    "value": 51,
+                    "cityId": "710000000",
+                    "oldprice": 0
+                },
+                {
+                    "value": 51,
+                    "cityId": "750000000",
+                    "oldprice": 0
+                }
+            ],
+            "deliveryOptions": null,
+            "_version": 60,
+            "_distinctVersion": 2,
+            "offerSource": "REINDEX",
+            "reindexReason": "MERCHANT_SPECIAL_DAYS_CHANGED",
+            "matchesLastBatch": false,
+            "skipDistinctCheck": true,
+            "priority": 0,
+            "rangePrice": {
+                "MAX": 51,
+                "MIN": 51
+            },
+            "updates": [
+                {
+                    "operationType": "PRICE_CHANGE",
+                    "uploadedBy": "samayryn@gmail.com",
+                    "uploadedDate": "2024-09-29T16:44:58.918"
+                },
+                {
+                    "operationType": "REMOVE",
+                    "uploadedBy": "samayryn@gmail.com",
+                    "uploadedDate": "2024-11-30T00:25:50.419"
+                },
+                {
+                    "operationType": "ON_SALE",
+                    "uploadedBy": "samayryn@gmail.com",
+                    "uploadedDate": "2025-05-03T19:34:35.834"
+                },
+                {
+                    "operationType": "REINDEX",
+                    "uploadedBy": "distinct-indexer",
+                    "uploadedDate": "2025-05-05T11:51:26.65"
+                }
+            ],
+            "archivedAt": null,
             "modification": false,
             "colourCode": null,
             "attributes": [],
-            "editionDeadline": "2025-05-03T19:22:10.657+05:00",
+            "editionDeadline": null,
             "verticalCategory": "Home",
             "masterCategory": "Master - Cutlery",
             "title": "Вилка 570619 1 шт, алюминий",
-            "available": false,
+            "available": true,
             "minPrice": 51,
             "maxPrice": 51,
             "points": [
-                "PP16",
-                "PP18",
-                "PP19",
-                "PPW2"
+                "PP2",
+                "PP10"
             ],
-            "updatedAt": "2024-11-29T19:25:58.127337Z",
+            "updatedAt": "2025-05-05T06:51:27.415675Z",
             "anyPickup": true,
             "anyKaspiDelivery": true,
             "anyKaspiDeliveryLocal": false,
@@ -56,6 +127,10 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "113640100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "113820100": {
                     "price": 51,
                     "oldPrice": null
@@ -73,6 +148,10 @@
                     "oldPrice": null
                 },
                 "115420100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "115630100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -108,6 +187,10 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "116837100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "117020100": {
                     "price": 51,
                     "oldPrice": null
@@ -128,11 +211,19 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "153630100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "154630100": {
                     "price": 51,
                     "oldPrice": null
                 },
                 "154820100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "154823100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -161,6 +252,10 @@
                     "oldPrice": null
                 },
                 "192610000": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "193230100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -240,6 +335,14 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "195255400": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "195255500": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "195620100": {
                     "price": 51,
                     "oldPrice": null
@@ -261,6 +364,10 @@
                     "oldPrice": null
                 },
                 "196245100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "196247500": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -293,6 +400,10 @@
                     "oldPrice": null
                 },
                 "196433100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "196435100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -336,7 +447,15 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "231045100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "233620100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "233635100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -345,6 +464,14 @@
                     "oldPrice": null
                 },
                 "234230100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "234847100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "234853100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -372,7 +499,15 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "273230100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "273620100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "274030100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -388,11 +523,23 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "314030100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "314033100": {
                     "price": 51,
                     "oldPrice": null
                 },
                 "314230100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "314837100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "314847100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -440,6 +587,14 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "352010000": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "352035100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "352110000": {
                     "price": 51,
                     "oldPrice": null
@@ -469,6 +624,10 @@
                     "oldPrice": null
                 },
                 "353249100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "353263100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -532,11 +691,27 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "394830100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "395030100": {
                     "price": 51,
                     "oldPrice": null
                 },
                 "395430100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "395439100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "395630100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "396230100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -557,6 +732,10 @@
                     "oldPrice": null
                 },
                 "433220100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "433257100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -608,11 +787,23 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "475220100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "475235100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "511010000": {
                     "price": 51,
                     "oldPrice": null
                 },
                 "511610000": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "512039100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -624,6 +815,14 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "512649100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "513630100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "514030100": {
                     "price": 51,
                     "oldPrice": null
@@ -632,11 +831,19 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "514443100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "514459100": {
                     "price": 51,
                     "oldPrice": null
                 },
                 "514481100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "514483400": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -653,6 +860,10 @@
                     "oldPrice": null
                 },
                 "515420100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "515433100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -708,6 +919,10 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "554230100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "554830100": {
                     "price": 51,
                     "oldPrice": null
@@ -741,6 +956,14 @@
                     "oldPrice": null
                 },
                 "595220100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "595620100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "595830100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -784,6 +1007,10 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "633600000": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "633830100": {
                     "price": 51,
                     "oldPrice": null
@@ -820,6 +1047,10 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "634430100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "634643300": {
                     "price": 51,
                     "oldPrice": null
@@ -836,7 +1067,27 @@
                     "price": 51,
                     "oldPrice": null
                 },
+                "635063100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "635230100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
                 "636230100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "636269100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "636430100": {
+                    "price": 51,
+                    "oldPrice": null
+                },
+                "636473100": {
                     "price": 51,
                     "oldPrice": null
                 },
@@ -853,13 +1104,28 @@
                     "oldPrice": null
                 }
             },
-            "offerError": {
-                "offerSource": "MANUAL_OFFER",
-                "errorCodes": [
-                    "NO_AVAILABILITIES"
-                ],
-                "warningCodes": [],
-                "klNotes": [],
-                "reindexReason": null
-            }
+            "stocks": [
+                {
+                    "cityId": "750000000",
+                    "stockLevel": {
+                        "8107004_PP10": {
+                            "value": 570,
+                            "enabled": true
+                        }
+                    }
+                },
+                {
+                    "cityId": "710000000",
+                    "stockLevel": {
+                        "8107004_PP2": {
+                            "value": 590,
+                            "enabled": true
+                        }
+                    }
+                }
+            ],
+            "offerError": null
         }
+    ],
+    "total": 1
+}
