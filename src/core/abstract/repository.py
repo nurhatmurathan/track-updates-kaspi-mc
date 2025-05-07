@@ -29,7 +29,7 @@ class Repository(Generic[M]):
         result = await self.session.execute(stmt)
         return result.scalars().one()
 
-    async def get_last_by_filters(self, where: list[bool]) -> M:
+    async def get_last_by_filters(self, where: list[bool]) -> M | None:
         stmt = select(self.model).filter(*where).order_by(desc("created_at"))
         result = await self.session.execute(stmt)
         return result.scalars().first()

@@ -6,7 +6,12 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.core import logger
 from src.core.abstract import Repository
 from src.core.models import MCMerchant, MerchantProductAvailability, MerchantProductTrack, ProductFeature
-from src.module.schemas import MerchantProductAvailabilitySchema, ProductMCSchema
+from src.module.schemas import (
+    MerchantProductAvailabilitySchema,
+    ProductEditDetailSchema,
+    ProductFeatureSchema,
+    ProductMCSchema,
+)
 
 
 class RepoService:
@@ -68,3 +73,45 @@ class RepoService:
             schema.store_id,
             schema.stock_count,
         )
+
+    async def track_product_specifications(self, product_edit_detail_schema: ProductEditDetailSchema):
+        for classification in product_edit_detail_schema.classifications:
+            for feature in classification.features:
+                await self.track_product_feature(
+                    feature, classification.code, classification.name, product_edit_detail_schema.code
+                )
+
+    async def track_product_feature(
+        self, feature_schema: ProductFeatureSchema, class_code, class_name, product_id
+    ):
+        where = [
+            ProductFeature.product_id == product_id,
+            ProductFeature.class_code == class_code,
+            ProductFeature.attribute_code == feature_schema.attribute_code,
+        ]
+        latest_feature = await self.product_feature_repo.get_last_by_filters(where)
+
+        if not latest_feature:
+            await self.create_product_feature(feature_schema, class_code, class_name, product_id)
+            return
+
+        if (
+            latest_feature.name == feature_schema.name
+            and latest_feature.mandatory == feature_schema.mandatory
+            and latest_feature.manufacturer_sku == feature_schema.manufacturer_sku
+            and latest_feature.use_for_matching == feature_schema.use_for_matching
+            and latest_feature.position == feature_schema.position
+            and latest_feature.attribute_type == feature_schema.attribute_type
+            and latest_feature.value == feature_schema.value
+        ):
+            return
+
+        await self.create_product_feature(feature_schema, class_code, class_name, product_id)
+
+    async def create_product_feature(
+        self, feature_schema: ProductFeatureSchema, class_code, class_name, product_id
+    ):
+        product_feature = ProductFeature(
+            **feature_schema.model_dump(), product_id=product_id, class_code=class_code, class_name=class_name
+        )
+        await self.product_feature_repo.create(product_feature, False)

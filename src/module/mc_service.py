@@ -4,7 +4,7 @@ from typing import Any, List
 
 from aiohttp import ClientSession
 
-from .schemas import ProductMCSchema
+from .schemas import ProductEditDetailSchema, ProductMCSchema
 from src.common.exceptions import HttpRequestError
 from src.core import logger, settings
 
@@ -64,3 +64,7 @@ class KaspiMCService:
                 raise HttpRequestError(url, response.status, await response.text())
             data = await response.json()
         return data
+
+    async def get_validated_offer_edit_detail(self, master_sku, sku):
+        offer_data = await self.fetch_offer_edit_detail(master_sku, sku)
+        return ProductEditDetailSchema.model_validate(offer_data)

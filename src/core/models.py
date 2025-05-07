@@ -87,5 +87,5 @@ class ProductFeature(BaseDates):
     manufacturer_sku: Mapped[Optional[bool]]
     use_for_matching: Mapped[Optional[bool]]
     position: Mapped[Optional[int]]
-    attribute_type: Mapped[Optional[int]]
+    attribute_type: Mapped[str]
     value: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)

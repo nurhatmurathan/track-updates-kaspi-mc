@@ -32,3 +32,28 @@ class MerchantProductAvailabilitySchema(BaseModel):
     stock_specified: Optional[bool] = Field(None, alias="stockSpecified")
 
     model_config = ConfigDict(from_attributes=True, populate_by_name=True)
+
+
+class ProductFeatureSchema(BaseModel):
+    name: str
+    attribute_code: str = Field(alias="attributeCode")
+    qualifier: Optional[str] = None
+    position: Optional[int] = None
+    mandatory: Optional[bool] = None
+    use_for_matching: Optional[bool] = Field(None, alias="useForMatching")
+    manufacturer_sku: Optional[str] = Field(None, alias="manufacturerSku")
+    attribute_type: str = Field(alias="attributeType")
+    value: Optional[str | int | bool | dict] = None
+
+
+class ProductClassificationSchema(BaseModel):
+    code: str
+    name: str
+    features: List[ProductFeatureSchema] = []
+
+
+class ProductEditDetailSchema(BaseModel):
+    code: str
+    name: str
+    created_at: str = Field(None, alias="createdAt")
+    classifications: List[ProductClassificationSchema] = []
