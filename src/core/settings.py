@@ -14,6 +14,7 @@ class Settings(Base):
     login_url: str = "https://idmc.shop.kaspi.kz/api/p/login"
     merchants_url: str = "https://mc.shop.kaspi.kz/s/m"
     offers_url: str = "https://mc.shop.kaspi.kz/bff/offer-view/list"
+    offer_edit_detail: str = "https://mc.shop.kaspi.kz/content/editor/mc/product/preview/{master_sku}"
 
 
 class DBSettings(Base):

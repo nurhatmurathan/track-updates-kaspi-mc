@@ -55,3 +55,12 @@ class KaspiMCService:
                 validated_products.append(product)
 
         return validated_products
+
+    async def fetch_offer_edit_detail(self, master_sku, sku):
+        url = settings.offer_edit_detail.format(master_sku=master_sku)
+        params = {"m": self.merchant_id, "p": sku}
+        async with self.session.get(url, params=params) as response:
+            if response.status != 200:
+                raise HttpRequestError(url, response.status, await response.text())
+            data = await response.json()
+        return data
