@@ -11,7 +11,10 @@ class ProductMCSchema(BaseModel):
     master_title: str = Field(alias="masterTitle")
     shop_link: str = Field(alias="shopLink")
     available: bool
+    model: Optional[str] = None
     brand: Optional[str] = None
+    vertical_category: Optional[str] = Field(alias="verticalCategory")
+    master_category: Optional[str] = Field(alias="masterCategory")
     min_price: Optional[int] = Field(None, alias="minPrice")
     max_price: Optional[int] = Field(None, alias="maxPrice")
     images: Optional[List[str]] = []

@@ -47,10 +47,49 @@ class RepoService:
             product = MerchantProductTrack(**product_schema.model_dump())
             await self.merchant_product_repo.create(product, False)
 
+    async def track_product_2(self, product_schema: ProductMCSchema, merchant_id: str):
+        where = [
+            MerchantProductTrack.merchant_id == merchant_id,
+            MerchantProductTrack.sku == product_schema.sku,
+        ]
+        product = await self.merchant_product_repo.get_last_by_filters(where)
+        if not product:
+            await self.create_product(product_schema, merchant_id)
+            return
+
+        if (
+            product.title == product_schema.title
+            and product.master_title == product_schema.master_title
+            and product.shop_link == product_schema.shop_link
+            and product.available == product_schema.available
+            and product.model == product_schema.model
+            and product.brand == product_schema.brand
+            and product.vertical_category == product_schema.vertical_category
+            and product.master_category == product_schema.master_category
+            and product.min_price == product_schema.min_price
+            and product.max_price == product_schema.max_price
+            and product.images == product_schema.images
+            and product.updated_at == product_schema.updated_at
+            and product.any_pickup == product_schema.any_pickup
+            and product.any_kaspi_delivery == product_schema.any_kaspi_delivery
+            and product.any_kaspi_delivery_local == product_schema.any_kaspi_delivery_local
+            and product.any_kaspi_delivery_express == product_schema.any_kaspi_delivery_express
+            and product.any_merchant_delivery == product_schema.any_merchant_delivery
+        ):
+            return
+
+        await self.create_product(product_schema, merchant_id)
+
+    async def create_product(self, product_schema: ProductMCSchema, merchant_id: str):
+        logger.info("Merchant(%s) Detected update for product: %s", merchant_id, product_schema.sku)
+        product = MerchantProductTrack(**product_schema.model_dump(), merchant_id=merchant_id)
+        await self.merchant_product_repo.create(product, False)
+
     async def track_availability(self, schema: MerchantProductAvailabilitySchema, sku: str, merchant_id: str):
         where = [
             MerchantProductAvailability.merchant_id == merchant_id,
             MerchantProductAvailability.sku == sku,
+            MerchantProductAvailability.store_id == schema.store_id,
         ]
         instance = self.availability_repo.get_last_by_filters(where)
         if not instance:
