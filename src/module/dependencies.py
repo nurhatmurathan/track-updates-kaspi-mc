@@ -4,7 +4,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.common.exceptions import HttpRequestError
 from src.core import logger, settings
 from src.core.abstract import Repository
-from src.core.models import MCMerchant, MerchantProductAvailability, MerchantProductTrack, ProductFeature
+from src.core.models import MCMerchant, MerchantProductTrack
 from src.module import RepoService
 
 
@@ -13,8 +13,8 @@ def get_repo_service(db_session: AsyncSession):
         db_session,
         Repository(db_session, MCMerchant),
         Repository(db_session, MerchantProductTrack),
-        Repository(db_session, MerchantProductAvailability),
-        Repository(db_session, ProductFeature),
+        # Repository(db_session, MerchantProductAvailability),
+        # Repository(db_session, ProductFeature),
     )
 
 

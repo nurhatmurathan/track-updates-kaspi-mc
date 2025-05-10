@@ -18,6 +18,7 @@ async def track_merchant_products_process(db_session: AsyncSession):
             async for http_session in kaspimc_logged_in_session(
                 merchant.username, merchant.password, merchant.merchant_id
             ):
+                logger.info("Start tracking products of merchant %s", merchant.merchant_id)
                 mc_service = KaspiMCService(http_session, merchant.merchant_id)
                 await track_merchant_products_process_2(repo_service, mc_service)
         except HttpRequestError as e:
