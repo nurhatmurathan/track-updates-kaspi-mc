@@ -10,7 +10,7 @@ from src.core import logger, settings
 
 
 class KaspiMCService:
-    OFFERS_PAGINATE_SIZE = 50
+    OFFERS_PAGINATE_SIZE = 100
 
     def __init__(self, session: ClientSession, merchant_id: str):
         self.merchant_id = merchant_id

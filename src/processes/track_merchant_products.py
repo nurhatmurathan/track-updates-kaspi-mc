@@ -28,9 +28,7 @@ async def track_merchant_products_process(db_session: AsyncSession):
                     mc_service = KaspiMCService(http_session, merchant.merchant_id)
                     await track_merchant_products_process_2(repo_service, mc_service, merchant)
             except HttpRequestError as e:
-                logger.error(
-                    "Failed login process on merchant: %s: %s", merchant.merchant_id, merchant.username
-                )
+                logger.error("Failed process on merchant: %s: %s", merchant.merchant_id, merchant.username)
                 logger.exception(e)
             except Exception as e:
                 logger.error("Error occurred on merchant: %s: %s", merchant.merchant_id, e)
