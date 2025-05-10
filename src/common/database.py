@@ -33,8 +33,10 @@ class DatabaseService:
 
     async def scoped_session_dependency(self) -> async_scoped_session[AsyncSession]:
         session = self.get_scoped_session()
-        yield session
-        await session.close()
+        try:
+            yield session
+        finally:
+            await session.close()
 
 
 db_service = DatabaseService(

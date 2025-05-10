@@ -33,12 +33,13 @@ class MCMerchant(BaseUUIDPK, BaseDates):
     merchant_id: Mapped[str]
     store_name: Mapped[Optional[str]]
     products: Mapped[list["MerchantProductTrack"]] = relationship(
-        "MerchantProduct", back_populates="merchant"
+        "MerchantProductTrack", back_populates="merchant"
     )
 
 
 class MerchantProductTrack(BaseDates):
     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    kaspi_merchant_id: Mapped[str]
     sku: Mapped[str]
     master_sku: Mapped[str]
     title: Mapped[Optional[str]]
@@ -52,7 +53,7 @@ class MerchantProductTrack(BaseDates):
     min_price: Mapped[Optional[int]]
     max_price: Mapped[Optional[int]]
     images: Mapped[Optional[list[str]]] = mapped_column(ARRAY(String))
-    updated_at: Mapped[datetime]
+    updated_at: Mapped[Optional[str]]
     any_pickup: Mapped[Optional[bool]]
     any_kaspi_delivery: Mapped[Optional[bool]]
     any_kaspi_delivery_local: Mapped[Optional[bool]]

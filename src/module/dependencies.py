@@ -5,7 +5,7 @@ from src.common.exceptions import HttpRequestError
 from src.core import logger, settings
 from src.core.abstract import Repository
 from src.core.models import MCMerchant, MerchantProductTrack
-from src.module import RepoService
+from src.module.repo_service import RepoService
 
 
 def get_repo_service(db_session: AsyncSession):
@@ -22,7 +22,7 @@ async def kaspimc_logged_in_session(username: str, password: str, merchant_id: s
     session = ClientSession(timeout=ClientTimeout(total=30))
     try:
         await login_start_session(session, username, password)
-        verified = _verify_merchant(session, merchant_id)
+        verified = await _verify_merchant(session, merchant_id)
         if not verified:
             raise HttpRequestError(
                 "Verification merchant", 200, f"Failed to verify merchat_id - {merchant_id}"
@@ -35,18 +35,20 @@ async def kaspimc_logged_in_session(username: str, password: str, merchant_id: s
 
 async def login_start_session(session: ClientSession, username: str, password: str):
     # set cookie headers
-    async with session.get(settings.auth_cookies_url) as response:
+    headers = {"Content-Type": "application/json", "User-Agent": "PostmanRuntime/7.40.0"}
+
+    async with session.get(settings.auth_cookies_url, headers=headers) as response:
         if response.status != 200:
             raise HttpRequestError(settings.getdata_url, response.status, await response.text())
 
     credentials = {"_u": username, "_p": password}
-    async with session.post(settings.login_url, data=credentials) as response:
+    async with session.post(settings.login_url, json=credentials, headers=headers) as response:
         if response.status != 200:
             raise HttpRequestError(settings.login_url, response.status, await response.text())
         data = await response.json()
 
     redirect_url = data.get("redirectUrl")  # auth redirect
-    async with session.get(redirect_url) as response:
+    async with session.get(redirect_url, headers=headers) as response:
         if response.status != 200:
             raise HttpRequestError(redirect_url, response.status, await response.text())
 

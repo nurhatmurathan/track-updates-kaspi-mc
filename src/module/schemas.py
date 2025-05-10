@@ -1,4 +1,3 @@
-from datetime import datetime
 from typing import List, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
@@ -13,17 +12,17 @@ class ProductMCSchema(BaseModel):
     available: bool
     model: Optional[str] = None
     brand: Optional[str] = None
-    vertical_category: Optional[str] = Field(alias="verticalCategory")
-    master_category: Optional[str] = Field(alias="masterCategory")
+    vertical_category: Optional[str] = Field(None, alias="verticalCategory")
+    master_category: Optional[str] = Field(None, alias="masterCategory")
     min_price: Optional[int] = Field(None, alias="minPrice")
     max_price: Optional[int] = Field(None, alias="maxPrice")
     images: Optional[List[str]] = []
-    updated_at: datetime
+    updated_at: Optional[str] = Field(None, alias="updatedAt")
     any_pickup: Optional[bool] = Field(None, alias="anyPickup")
     any_kaspi_delivery: Optional[bool] = Field(None, alias="anyKaspiDelivery")
     any_kaspi_delivery_local: Optional[bool] = Field(None, alias="anyKaspiDeliveryLocal")
     any_kaspi_delivery_express: Optional[bool] = Field(None, alias="anyKaspiDeliveryExpress")
-    any_merchant_delivery: [Optional[bool]] = Field(None, alias="anyMerchantDelivery")
+    any_merchant_delivery: Optional[bool] = Field(None, alias="anyMerchantDelivery")
 
 
 class MerchantProductAvailabilitySchema(BaseModel):

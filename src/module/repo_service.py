@@ -5,9 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.core import logger
 from src.core.abstract import Repository
 from src.core.models import MCMerchant, MerchantProductTrack
-from src.module.schemas import (
-    ProductMCSchema,
-)
+from src.module.schemas import ProductMCSchema
 
 
 class RepoService:
@@ -30,14 +28,14 @@ class RepoService:
         result = await self.session.execute(query)
         return result.scalars().all()
 
-    async def track_product(self, product_schema: ProductMCSchema, merchant_id: str):
+    async def track_product(self, product_schema: ProductMCSchema, merchant_id: str, kaspi_merchant_id: str):
         where = [
-            MerchantProductTrack.merchant_id == merchant_id,
+            MerchantProductTrack.kaspi_merchant_id == kaspi_merchant_id,
             MerchantProductTrack.sku == product_schema.sku,
         ]
         product = await self.merchant_product_repo.get_last_by_filters(where)
         if not product:
-            await self.create_product(product_schema, merchant_id)
+            await self.create_product(product_schema, merchant_id, kaspi_merchant_id)
             return
 
         if (
@@ -60,11 +58,13 @@ class RepoService:
         ):
             return
 
-        await self.create_product(product_schema, merchant_id)
+        await self.create_product(product_schema, merchant_id, kaspi_merchant_id)
 
-    async def create_product(self, product_schema: ProductMCSchema, merchant_id: str):
-        logger.info("Merchant(%s) Detected update for product: %s", merchant_id, product_schema.sku)
-        product = MerchantProductTrack(**product_schema.model_dump(), merchant_id=merchant_id)
+    async def create_product(self, product_schema: ProductMCSchema, merchant_id: str, kaspi_merchant_id: str):
+        logger.info("Merchant(%s) Detected update for product: %s", kaspi_merchant_id, product_schema.sku)
+        product = MerchantProductTrack(
+            **product_schema.model_dump(), merchant_id=merchant_id, kaspi_merchant_id=kaspi_merchant_id
+        )
         await self.merchant_product_repo.create(product, False)
 
     #
