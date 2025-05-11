@@ -48,7 +48,10 @@ async def track_merchant_products_process_2(
         await repo_service.track_product(merchant_product, merchant.id, merchant.merchant_id)
 
         # detailed specifications track
-        detail = await mc_service.get_validated_offer_edit_detail(
-            merchant_product.master_sku, merchant_product.sku
-        )
-        await repo_service.track_product_specifications(detail)
+        try:
+            detail = await mc_service.get_validated_offer_edit_detail(
+                merchant_product.master_sku, merchant_product.sku
+            )
+            await repo_service.track_product_specifications(detail)
+        except Exception as e:
+            logger.warning(e)
