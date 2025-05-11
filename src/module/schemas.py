@@ -37,15 +37,15 @@ class MerchantProductAvailabilitySchema(BaseModel):
 
 
 class ProductFeatureSchema(BaseModel):
-    name: str
     attribute_code: str = Field(alias="attributeCode")
-    qualifier: Optional[str] = None
-    position: Optional[int] = None
+    name: Optional[str] = None
+    # qualifier: Optional[str] = None
     mandatory: Optional[bool] = None
+    manufacturer_sku: Optional[bool] = Field(None, alias="manufacturerSku")
     use_for_matching: Optional[bool] = Field(None, alias="useForMatching")
-    manufacturer_sku: Optional[str] = Field(None, alias="manufacturerSku")
-    attribute_type: str = Field(alias="attributeType")
-    value: Optional[str | int | bool | dict] = None
+    position: Optional[int] = None
+    attribute_type: Optional[str] = Field(alias="attributeType")
+    value: Optional[str | int | float | bool | list | dict] = None
 
 
 class ProductClassificationSchema(BaseModel):

@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 
-from sqlalchemy import ARRAY, BigInteger, ForeignKey, String, text
+from sqlalchemy import ARRAY, JSON, BigInteger, ForeignKey, String, text
 from sqlalchemy.orm import DeclarativeBase, Mapped, declared_attr, mapped_column, relationship
 
 
@@ -77,16 +77,16 @@ class MerchantProductTrack(BaseDates):
 #     merchant_id: Mapped[str]
 #
 #
-# class ProductFeature(BaseDates):
-#     id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
-#     product_id: Mapped[str]
-#     class_code: Mapped[str]
-#     class_name: Mapped[str]
-#     name: Mapped[str]
-#     attribute_code: Mapped[str]
-#     mandatory: Mapped[Optional[bool]]
-#     manufacturer_sku: Mapped[Optional[bool]]
-#     use_for_matching: Mapped[Optional[bool]]
-#     position: Mapped[Optional[int]]
-#     attribute_type: Mapped[str]
-#     value: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
+class ProductFeature(BaseDates):
+    id: Mapped[int] = mapped_column(BigInteger, primary_key=True, autoincrement=True)
+    product_id: Mapped[str]
+    class_code: Mapped[str]
+    class_name: Mapped[str]
+    attribute_code: Mapped[str]
+    name: Mapped[Optional[str]]
+    mandatory: Mapped[Optional[bool]]
+    manufacturer_sku: Mapped[Optional[bool]]
+    use_for_matching: Mapped[Optional[bool]]
+    position: Mapped[Optional[int]]
+    attribute_type: Mapped[Optional[str]]
+    value: Mapped[Optional[str | int | float | bool | list | dict]] = mapped_column(JSON, nullable=True)

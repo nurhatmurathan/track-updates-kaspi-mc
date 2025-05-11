@@ -32,7 +32,7 @@ async def track_merchant_products_process(db_session: AsyncSession):
                 logger.exception(e)
             except Exception as e:
                 logger.error("Error occurred on merchant: %s: %s", merchant.merchant_id, e)
-                # logger.exception(e)
+                logger.exception(e)
                 loop = False
 
         logger.info("track_merchant_products_process(): Sleeping for 5 hours")
@@ -46,3 +46,9 @@ async def track_merchant_products_process_2(
 
     for merchant_product in merchant_products:
         await repo_service.track_product(merchant_product, merchant.id, merchant.merchant_id)
+
+        # detailed specifications track
+        detail = await mc_service.get_validated_offer_edit_detail(
+            merchant_product.master_sku, merchant_product.sku
+        )
+        await repo_service.track_product_specifications(detail)
