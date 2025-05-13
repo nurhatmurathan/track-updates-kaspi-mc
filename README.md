@@ -12,10 +12,10 @@
 
 5. Activate virtual environment: ```source .venv/bin/activate```
 
-6. Install development dependencies: ```just dev-deps```
+6. Install development dependencies: ```make dev-deps```
 
-7. Build the Docker container: ```just build```
+7. Build the Docker container: ```make build```
 
-8. Start the application: ```just up```
+8. Start the application: ```make up```
 
 9. Install pre-commit hooks: ```pre-commit install```
