@@ -19,5 +19,3 @@
 8. Start the application: ```just up```
 
 9. Install pre-commit hooks: ```pre-commit install```
-
-> **Note:** This project has been tested and verified only on macOS. While it may work on other operating systems, we cannot guarantee full compatibility.
