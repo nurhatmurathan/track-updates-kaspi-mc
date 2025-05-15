@@ -48,6 +48,7 @@ class MerchantProductTrack(BaseDates):
     available: Mapped[bool]
     model: Mapped[Optional[str]]
     brand: Mapped[Optional[str]]
+    video: Mapped[Optional[str]]
     vertical_category: Mapped[Optional[str]]
     master_category: Mapped[Optional[str]]
     min_price: Mapped[Optional[int]]

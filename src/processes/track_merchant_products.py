@@ -45,7 +45,14 @@ async def track_merchant_products_process_2(
     merchant_products = await mc_service.get_validated_products()
 
     for merchant_product in merchant_products:
-        await repo_service.track_product(merchant_product, merchant.id, merchant.merchant_id)
+        # detailed video
+        video_id = None
+        try:
+            video_id = await mc_service.get_offer_video_id(merchant_product.sku)
+        except Exception as e:
+            logger.warning("Error on fetch video id: %s", e)
+
+        await repo_service.track_product(merchant_product, merchant.id, merchant.merchant_id, video_id)
 
         # detailed specifications track
         try:

@@ -16,4 +16,4 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         now = datetime.utcnow()
-        print("Consumer stopped at {}".format(now))  # noqa: T201
+        print("Process loop stopped at {}".format(now))  # noqa: T201

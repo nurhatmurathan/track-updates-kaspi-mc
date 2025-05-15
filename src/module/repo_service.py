@@ -28,14 +28,16 @@ class RepoService:
         result = await self.session.execute(query)
         return result.scalars().all()
 
-    async def track_product(self, product_schema: ProductMCSchema, merchant_id: str, kaspi_merchant_id: str):
+    async def track_product(
+        self, product_schema: ProductMCSchema, merchant_id: str, kaspi_merchant_id: str, video_id: str = None
+    ):
         where = [
             MerchantProductTrack.kaspi_merchant_id == kaspi_merchant_id,
             MerchantProductTrack.sku == product_schema.sku,
         ]
         product = await self.merchant_product_repo.get_last_by_filters(where)
         if not product:
-            await self.create_product(product_schema, merchant_id, kaspi_merchant_id)
+            await self.create_product(product_schema, video_id, merchant_id, kaspi_merchant_id)
             return
 
         if (
@@ -45,6 +47,7 @@ class RepoService:
             and product.available == product_schema.available
             and product.model == product_schema.model
             and product.brand == product_schema.brand
+            and product.video == video_id
             and product.vertical_category == product_schema.vertical_category
             and product.master_category == product_schema.master_category
             and product.min_price == product_schema.min_price
@@ -58,12 +61,17 @@ class RepoService:
         ):
             return
 
-        await self.create_product(product_schema, merchant_id, kaspi_merchant_id)
+        await self.create_product(product_schema, video_id, merchant_id, kaspi_merchant_id)
 
-    async def create_product(self, product_schema: ProductMCSchema, merchant_id: str, kaspi_merchant_id: str):
+    async def create_product(
+        self, product_schema: ProductMCSchema, video_id: str, merchant_id: str, kaspi_merchant_id: str
+    ):
         logger.info("Merchant(%s) Detected update for product: %s", kaspi_merchant_id, product_schema.sku)
         product = MerchantProductTrack(
-            **product_schema.model_dump(), merchant_id=merchant_id, kaspi_merchant_id=kaspi_merchant_id
+            **product_schema.model_dump(),
+            video=video_id,
+            merchant_id=merchant_id,
+            kaspi_merchant_id=kaspi_merchant_id,
         )
         await self.merchant_product_repo.create(product, False)
 

@@ -68,3 +68,16 @@ class KaspiMCService:
     async def get_validated_offer_edit_detail(self, master_sku, sku):
         offer_data = await self.fetch_offer_edit_detail(master_sku, sku)
         return ProductEditDetailSchema.model_validate(offer_data)
+
+    async def fetch_offer_detail(self, sku):
+        url = settings.offer_detail
+        params = {"m": self.merchant_id, "s": sku}
+        async with self.session.get(url, params=params) as response:
+            if response.status != 200:
+                raise HttpRequestError(url, response.status, await response.text())
+            data = await response.json()
+        return data
+
+    async def get_offer_video_id(self, sku) -> str | None:
+        offer_data = await self.fetch_offer_detail(sku)
+        return offer_data.get("masterProduct", {}).get("videoId")
