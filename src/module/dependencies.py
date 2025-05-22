@@ -39,7 +39,7 @@ async def login_start_session(session: ClientSession, username: str, password: s
 
     async with session.get(settings.auth_cookies_url, headers=headers) as response:
         if response.status != 200:
-            raise HttpRequestError(settings.getdata_url, response.status, await response.text())
+            raise HttpRequestError(settings.auth_cookies_url, response.status, await response.text())
 
     credentials = {"_u": username, "_p": password}
     async with session.post(settings.login_url, json=credentials, headers=headers) as response:
