@@ -1,6 +1,20 @@
 from typing import List, Optional
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, Field
+
+
+class ProductMCAvailabilitySchema(BaseModel):
+    available: Optional[str] = None
+    store_id: Optional[str] = Field(None, alias="storeId")
+    stock_count: Optional[int] = Field(None, alias="stockCount")
+    pre_order: Optional[int] = Field(None, alias="preOrder")
+    stock_enabled: Optional[bool] = Field(None, alias="stockEnabled")
+    stock_specified: Optional[bool] = Field(None, alias="stockSpecified")
+
+
+class ProductMCCityPrice(BaseModel):
+    value: int
+    city_id: str = Field(alias="cityId")
 
 
 class ProductMCSchema(BaseModel):
@@ -23,17 +37,7 @@ class ProductMCSchema(BaseModel):
     any_kaspi_delivery_local: Optional[bool] = Field(None, alias="anyKaspiDeliveryLocal")
     any_kaspi_delivery_express: Optional[bool] = Field(None, alias="anyKaspiDeliveryExpress")
     any_merchant_delivery: Optional[bool] = Field(None, alias="anyMerchantDelivery")
-
-
-class MerchantProductAvailabilitySchema(BaseModel):
-    available: Optional[str]
-    store_id: Optional[str] = Field(None, alias="storeId")
-    stock_count: Optional[int] = Field(None, alias="stockCount")
-    pre_order: Optional[int] = Field(None, alias="preOrder")
-    stock_enabled: Optional[bool] = Field(None, alias="stockEnabled")
-    stock_specified: Optional[bool] = Field(None, alias="stockSpecified")
-
-    model_config = ConfigDict(from_attributes=True, populate_by_name=True)
+    availabilities: Optional[List[ProductMCAvailabilitySchema]] = None
 
 
 class ProductFeatureSchema(BaseModel):

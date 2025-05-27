@@ -4,8 +4,13 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.core import logger
 from src.core.abstract import Repository
-from src.core.models import MCMerchant, MerchantProductTrack, ProductFeature
-from src.module.schemas import ProductEditDetailSchema, ProductFeatureSchema, ProductMCSchema
+from src.core.models import MCMerchant, MerchantProductAvailabilityTrack, MerchantProductTrack, ProductFeature
+from src.module.schemas import (
+    ProductEditDetailSchema,
+    ProductFeatureSchema,
+    ProductMCAvailabilitySchema,
+    ProductMCSchema,
+)
 
 
 class RepoService:
@@ -14,13 +19,13 @@ class RepoService:
         session: AsyncSession,
         merchant_repo: Repository[MCMerchant],
         merchant_product_repo: Repository[MerchantProductTrack],
-        # availability_repo: Repository[MerchantProductAvailability],
+        availability_repo: Repository[MerchantProductAvailabilityTrack],
         product_feature_repo: Repository[ProductFeature],
     ):
         self.session = session
         self.merchant_repo = merchant_repo
         self.merchant_product_repo = merchant_product_repo
-        # self.availability_repo = availability_repo
+        self.availability_repo = availability_repo
         self.product_feature_repo = product_feature_repo
 
     async def get_merchants(self) -> Sequence[MCMerchant]:
@@ -31,6 +36,10 @@ class RepoService:
     async def track_product(
         self, product_schema: ProductMCSchema, merchant_id: str, kaspi_merchant_id: str, video_id: str = None
     ):
+        if product_schema.availabilities:
+            for availability in product_schema.availabilities:
+                await self.track_availability(availability, product_schema.sku, merchant_id)
+
         where = [
             MerchantProductTrack.kaspi_merchant_id == kaspi_merchant_id,
             MerchantProductTrack.sku == product_schema.sku,
@@ -122,31 +131,36 @@ class RepoService:
         )
         await self.product_feature_repo.create(product_feature, False)
 
-    #
-    # async def track_availability(self, schema: MerchantProductAvailabilitySchema, sku: str, merchant_id: str):
-    #     where = [
-    #         MerchantProductAvailability.merchant_id == merchant_id,
-    #         MerchantProductAvailability.sku == sku,
-    #         MerchantProductAvailability.store_id == schema.store_id,
-    #     ]
-    #     instance = self.availability_repo.get_last_by_filters(where)
-    #     if not instance:
-    #         await self.create_availability(schema, sku, merchant_id)
-    #         return
-    #
-    #     instance_schema = MerchantProductAvailabilitySchema.model_validate(instance)
-    #     if schema == instance_schema:
-    #         await self.create_availability(schema, sku, merchant_id)
-    #
-    # async def create_availability(
-    #     self, schema: MerchantProductAvailabilitySchema, sku: str, merchant_id: str
-    # ):
-    #     availability = MerchantProductAvailability(**schema.model_dump(), sku=sku, merchant_id=merchant_id)
-    #     await self.availability_repo.create(availability, False)
-    #     logger.info(
-    #         "Merchant(%s) Track availability: %s, %s. Stock: %d",
-    #         merchant_id,
-    #         sku,
-    #         schema.store_id,
-    #         schema.stock_count,
-    #     )
+    async def track_availability(self, schema: ProductMCAvailabilitySchema, sku: str, merchant_id: str):
+        where = [
+            MerchantProductAvailabilityTrack.merchant_id == merchant_id,
+            MerchantProductAvailabilityTrack.sku == sku,
+            MerchantProductAvailabilityTrack.store_id == schema.store_id,
+        ]
+        instance = await self.availability_repo.get_last_by_filters(where)
+        if not instance:
+            await self.create_availability(schema, sku, merchant_id)
+            return
+
+        if (
+            schema.stock_count == instance.stock_count
+            and schema.available == instance.available
+            and schema.pre_order == instance.pre_order
+            and schema.stock_enabled == instance.stock_enabled
+        ):
+            return
+
+        await self.create_availability(schema, sku, merchant_id)
+
+    async def create_availability(self, schema: ProductMCAvailabilitySchema, sku: str, merchant_id: str):
+        availability = MerchantProductAvailabilityTrack(
+            **schema.model_dump(), sku=sku, merchant_id=merchant_id
+        )
+        await self.availability_repo.create(availability, False)
+        logger.info(
+            "Merchant(%s) Track availability: %s, %s. Stock: %d",
+            merchant_id,
+            sku,
+            schema.store_id,
+            schema.stock_count,
+        )
