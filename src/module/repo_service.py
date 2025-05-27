@@ -158,9 +158,8 @@ class RepoService:
         )
         await self.availability_repo.create(availability, False)
         logger.info(
-            "Merchant(%s) Track availability: %s, %s. Stock: %d",
+            "Merchant(%s) Track availability: %s, %s.",
             merchant_id,
             sku,
             schema.store_id,
-            schema.stock_count,
         )
