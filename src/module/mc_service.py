@@ -42,7 +42,13 @@ class KaspiMCService:
         logger.info("Offers: %s, Total Pages: %s", self.merchant_id, page_count)
 
         tasks = [self.fetch_products_by_page(page, available=available) for page in range(page_count)]
-        return await asyncio.gather(*tasks)
+
+        chunk_size, result = 10, []
+        for i in range(0, len(tasks), chunk_size):
+            res = await asyncio.gather(*tasks[i : i + chunk_size])
+            result.extend(res)
+
+        return result
 
     async def get_validated_products(self) -> List[ProductMCSchema]:
         active_offers = await self.fetch_offers(availability=True)
